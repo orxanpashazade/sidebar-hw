@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="sidebarClosed bg-[#5D6D7E] w-screen h-screen flex ">
+        <div
+            class="sidebar-close-content bg-[#1C2833] h-screen w-[70px] flex flex-col items-center py-[30px] box-border gap-[40px]">
+            <button class="burger-btn mb-[20px] group">
+                <i class="fa-solid fa-bars text-[25px] text-white group-hover:cursor-pointer group-hover:text-[#5D6D7E]  transtion duration-100"></i>
+            </button>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200 ">
+                <i class="fa-solid fa-table-columns text-[25px] group text-white group-hover/hovering:text-black p-[7px]  box-border "></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-user text-[25px] text-white p-[7px] group-hover/hovering:text-black"></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-message text-[25px] text-white p-[7px] group-hover/hovering:text-black  "></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-chart-pie text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-folder text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-cart-shopping text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+            </div>
+            <div class="width-[50px] height-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border transtion duration-200">
+                <i class="fa-solid fa-gear text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+            </div>
+        </div>
+        <div class="sidebarOpened bg-[#99A3A4] w-screen h-screen flex flex-row hidden ">
+            <div class="sidebar-open-content bg-[#1C2833] h-screen w-[200px] flex flex-col items-start justify-center items-center px-[20px] py-[30px] box-border gap-[40px] ">
+                <div class="mb-[20px] group ">
+                    <i class="fa-solid fa-xmark closeBtn text-[25px] text-white group-hover:cursor-pointer group-hover:text-[#2E4053] transtion duration-100"></i>
+                </div>
+                <div class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center justify-center flex-row gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-table-columns text-[25px] group text-white group-hover/hovering:text-black box-border "></i>
+                    <p class="text-white group-hover/hovering:text-black">Dashboard</p>
+                </div>
+                <div class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center  flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-user text-[25px] text-white p-[7px] group-hover/hovering:text-black"></i>
+                    <p class="text-white group-hover/hovering:text-black">User</p>
+                </div>
+                <div class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center  flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-message text-[25px] text-white p-[7px] group-hover/hovering:text-black"></i>
+                    <p class="text-white group-hover/hovering:text-black">Messages</p>
+                </div>
+                <div
+                    class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center  flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-chart-pie text-[25px] text-white p-[7px] group-hover/hovering:text-black"></i>
+                    <p class="text-white group-hover/hovering:text-black">Analytics</p>
+                </div>
+                <div
+                    class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-folder text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+                    <p class="text-white group-hover/hovering:text-black">File Manager</p>
+                </div>
+                <div
+                    class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-cart-shopping text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+                    <p class="text-white group-hover/hovering:text-black">Order</p>
+                </div>
+                <div
+                    class="w-[150px] h-[50px] rounded-[5px] bg-[#1C2833] hover:bg-white group/hovering box-border flex items-center flex-row p-[7px] gap-[15px] transtion duration-200">
+                    <i class="fa-solid fa-gear text-[25px] text-white p-[7px] group-hover/hovering:text-black "></i>
+                    <p class="text-white group-hover/hovering:text-black">Settings</p>
+                </div>
+            </div>
+            <div class="toCloseSidebar bg-[#2E4053] w-full">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
